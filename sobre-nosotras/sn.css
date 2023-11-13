@@ -65,6 +65,23 @@ body{
     box-sizing: border-box;
     margin: 30px;
 }
+
+.contenedor {
+    padding-top: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+@media screen and (min-width: 768px) {
+    .contenedor {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }    
 .sobre-nosotras__header{
     text-align: center;
 }
@@ -77,14 +94,10 @@ body{
 .sobre-nosotras__title p{
     padding-bottom: 50px;
 }
-.card{
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
+
 .sobre-nosotras-patricia{
     background-color: aliceblue;
+    padding: auto;
 }
 .sobre-nosotras-patricia h2{
     padding-top: 50px;
@@ -143,6 +156,19 @@ body{
     align-items: center;
     text-align: center;
 }
+img{
+    overflow: clip;
+    display:flex;
+ 
+}
+.descripción p{
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .trabajos-content h1{
     text-align: center;
     padding-top: 50px;
@@ -181,12 +207,12 @@ body{
 }
 .footer-content .info{
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    margin: auto;
-    grid-template-columns: 1 fr 1 fr 1 fr;
-    grid-gap: 50px;
-    padding-top: 45px 0px;
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 250px;
+    padding-top: 25px;
   }
   .footer-content h3{
     color: aliceblue;
@@ -198,9 +224,9 @@ body{
 
   .footer-content .info .box .figure .logo{
     padding-left: 20px;
+    padding-top: 50px;
     color: aliceblue;
-    font-size: 200px;
-    font-weight: 700;
+    font-size: 1000px;
     text-transform: capitalize;
     text-decoration: overline;
   }

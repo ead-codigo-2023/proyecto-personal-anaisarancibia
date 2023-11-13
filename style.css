@@ -59,6 +59,15 @@ img{
 .menu label{
     cursor: pointer;
 }
+.boton-1{
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  padding: 13px 45px;
+  background-color: #406f7b;
+  color: aliceblue;
+  border-radius: 25px;
+}
 .header-txt h1{
     font-size: 50px;
     line-height: 1.2;
@@ -201,12 +210,12 @@ h2{
   }
   .footer-content .info{
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    margin: auto;
-    grid-template-columns: 1 fr 1 fr 1 fr;
-    grid-gap: 50px;
-    padding-top: 45px 0px;
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 250px;
+    padding-top: 25px;
   }
   .footer-content h3{
     color: aliceblue;
