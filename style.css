@@ -74,12 +74,13 @@ p{
     text-align: center;
 }
 .boton-1{
+    text-align: center;
+    align-content: center;
     display: inline-block;
     padding: 13px 45px;
     background-color: #406f7b;
     color: aliceblue;
     border-radius: 25px;
-    align-content: center;
 }
 .kits{
     padding: 100px 0;
@@ -94,19 +95,22 @@ h2{
     margin-bottom: 15px;
 }
 .kit-group{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    padding: 40px;
-    gap: 20px;
-    grid-template-rows: 100px auto 100px;
-    column-gap: 2rem;
-    row-gap: 1rem;
+  display: flex;
+  position: static;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+  grid-template-rows: 100px auto 100px;
 }
 .kits p{
     color: #406f7b;
 }
 .servicios-content h2{
+  justify-content: space-betweens;
     color: aliceblue;
     text-align: center;
     padding-top: 25px;
@@ -195,15 +199,57 @@ h2{
     background-color: var(--color-primary);
     border-radius: 2rem;
   }
+  .footer-content .info{
+    display: grid;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    grid-template-columns: 1 fr 1 fr 1 fr;
+    grid-gap: 50px;
+    padding-top: 45px 0px;
+  }
+  .footer-content h3{
+    color: aliceblue;
+    padding-bottom: 10px;
+  }
+  .footer-content .info .box p{
+    color: aliceblue;
+  }
+
+  .footer-content .info .box .figure .logo{
+    padding-left: 20px;
+    color: aliceblue;
+    font-size: 200px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: overline;
+  }
+  .footer-content .info .box .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    margin-right: 10px;
+    background-color: #5795a4;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 300ms ease; 
+  }
+  .footer-content .info .box .redes a:hover{
+    color: #406f7b;
+  }
+  .footer-content 
+  .cp{
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 10px;
+  } 
 .inferior{
     background-color: #406f7b;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-}
-.inferior h2{
-    color: aliceblue;
-    padding-top: 25px;
-    padding-bottom: 5px;
 }
